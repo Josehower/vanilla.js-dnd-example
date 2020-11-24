@@ -7,7 +7,7 @@ let clickTarget = undefined;
 let offset = {};
 
 //this is be the template for the squares
-const html = `
+const squareDiv = `
 <div
 class='square'
 style='background-color:black;
@@ -18,7 +18,7 @@ height:200px'>
 //this is the function that create the squares
 function createSquare() {
   //replace old html to new html plus a new square from template
-  body.innerHTML = html + body.innerHTML;
+  body.innerHTML = squareDiv + body.innerHTML;
   //NOTE: because i am seting a new innerHTML old event listeners are cleared.
 
   //add event listeners to EACH squares and use position absolute on them.
